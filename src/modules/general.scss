@@ -1,0 +1,121 @@
+$white: #fff;
+$red: #c60101;
+$black: #181414;
+$grey: #929292;
+$yellow: #fad537;
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500;
+  font-size: 14px;
+  color: $black;
+  a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500 !important;
+    text-decoration: none;
+  }
+}
+body {
+  background: #f9f9f9;
+}
+main {
+  section {
+    &:not(:first-child) {
+      margin-top: 60px;
+      @media (max-width: 575px) {
+        margin-top: 45px;
+      }
+    }
+  }
+}
+h1 {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 120%;
+  @media (max-width: 767px) {
+    font-size: 45px;
+  }
+  @media (max-width: 575px) {
+    font-size: 40px;
+  }
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+}
+button {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid $red;
+    background: rgba(252, 252, 252, 0);
+    transition: all 0.4s;
+    color: $red;
+  }
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.red-button {
+  display: block;
+  padding: 15px 29px;
+  background: $red;
+  color: $white;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 2px solid rgba(252, 252, 252, 0);
+  transition: all 0.4s;
+  text-align: center;
+  &:hover {
+    border: 2px solid $red;
+    background: rgba(252, 252, 252, 0);
+    transition: all 0.4s;
+    color: $red;
+  }
+}
+.white-button {
+  display: block;
+  padding: 15px 29px;
+  background: $white;
+  color: $black;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: all 0.4s;
+  text-align: center;
+  &:hover {
+    background: $red;
+    transition: all 0.4s;
+    color: $white;
+  }
+}
+.products-card {
+  border-radius: 10px;
+  .card-body {
+    padding: 20px 30px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+  }
+  .card-title {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    font-weight: 500;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+  }
+}
