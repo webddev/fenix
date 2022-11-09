@@ -84,7 +84,7 @@ p {
   text-align: center;
   &:hover {
     border: 2px solid $red;
-    background: rgba(252, 252, 252, 0);
+    background: $white;
     transition: all 0.4s;
     color: $red;
   }

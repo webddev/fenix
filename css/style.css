@@ -129,7 +129,7 @@ p {
 }
 .red-button:hover {
   border: 2px solid #c60101;
-  background: rgba(252, 252, 252, 0);
+  background: #fff;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #c60101;
