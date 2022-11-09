@@ -135,8 +135,12 @@ footer {
           font-weight: 600;
           margin-bottom: 45px;
           width: 205px;
+          padding: 11px;
           &:hover {
             color: $white;
+          }
+          @media (max-width: 575px) {
+            width: 165px;
           }
         }
       }

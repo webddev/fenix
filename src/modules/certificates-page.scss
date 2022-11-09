@@ -1,0 +1,25 @@
+.certificates-page {
+  h2 {
+    margin-bottom: 15px;
+  }
+  .cert-deskription {
+    max-width: 450px;
+    margin-bottom: 50px;
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.certif-row {
+  justify-content: center;
+  img {
+    cursor: pointer;
+  }
+  .col-9 {
+    @media (max-width: 767px) {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

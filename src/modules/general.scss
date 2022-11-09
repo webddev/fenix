@@ -5,22 +5,24 @@ $grey: #929292;
 $yellow: #fad537;
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: $black;
   a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500 !important;
     text-decoration: none;
   }
+}
+* {
+  font-family: "Poppins", sans-serif !important;
 }
 body {
   background: #f9f9f9;
 }
 main {
   section {
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       margin-top: 60px;
       @media (max-width: 575px) {
         margin-top: 45px;
@@ -43,6 +45,11 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
+}
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 button {
   border: none;
@@ -102,8 +109,16 @@ p {
   border-radius: 10px;
   .card-body {
     padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
     @media (max-width: 767px) {
       padding: 20px;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 20px;
+      margin-top: auto;
     }
   }
   .card-title {
@@ -117,5 +132,85 @@ p {
     font-size: 13px;
     font-family: "Poppins", sans-serif;
     margin-bottom: 30px;
+  }
+  .red-button {
+    margin-top: auto;
+  }
+}
+.breadcrumb {
+  margin-top: 43px;
+  margin-bottom: 6px;
+  @media (max-width: 767px) {
+    margin-top: 25px;
+  }
+  .breadcrumb-item,
+  a {
+    font-family: "Poppins", sans-serif;
+    color: #a8a8a8;
+    transition: all 0.4s;
+    &:not(.active):hover {
+      color: $red;
+      transition: all 0.4s;
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: #a8a8a8;
+  }
+}
+.pop-up {
+  background-image: url(../img/ship.webp);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 130% 100%;
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-height: 400px;
+  width: 805px;
+  max-width: 100%;
+  padding: 40px;
+  padding-bottom: 50px;
+  cursor: auto !important;
+  @media (max-width: 575px) {
+    background-size: 80%;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    max-width: 305px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    margin-bottom: 20px;
+  }
+  form {
+    max-width: 350px;
+  }
+  .popup-inputs {
+    display: flex;
+    flex-direction: column;
+    input {
+      background: #f9f9f9;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      color: $grey;
+      padding-left: 17px;
+      height: 53px;
+      margin-bottom: 20px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+.fancybox__content > .carousel__button.is-close {
+  top: 7px;
+  right: 7px;
+  color: #a3a3a3;
+  &:hover {
+    border: none;
   }
 }

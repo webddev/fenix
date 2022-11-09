@@ -1,0 +1,43 @@
+.products-page {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .products-pic {
+    max-width: 100%;
+  }
+  .products {
+    .products-topblock {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      margin-top: 30px;
+      @media (max-width: 575px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      gap: 30px;
+      .products-category {
+        .category-row {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 28px;
+          @media (max-width: 575px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          .card-text {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .products-block {
+      margin-top: 60px;
+      @media (max-width: 575px) {
+        margin-top: 45px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+      }
+    }
+  }
+}

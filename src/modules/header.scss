@@ -14,6 +14,14 @@ header {
         }
       }
     }
+    .navbar-brand {
+      img {
+        @media (max-width: 575px) {
+          max-width: 120px;
+          height: 50px;
+        }
+      }
+    }
     .navbar-toggler {
       border: 1px solid $red;
       &:focus-visible {
@@ -27,6 +35,8 @@ header {
       }
     }
     .red-button {
+      font-size: 12px;
+      padding: 10px 29px;
       @media (max-width: 992px) {
         display: none;
       }
@@ -34,6 +44,7 @@ header {
     .red-button.mob {
       display: none;
       @media (max-width: 992px) {
+        font-size: 12px;
         display: block;
         margin-left: auto;
         margin-right: 25px;
@@ -41,6 +52,7 @@ header {
       }
       @media (max-width: 575px) {
         margin-right: 15px;
+        padding: 7px 15px;
       }
     }
   }
