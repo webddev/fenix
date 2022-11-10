@@ -22,21 +22,20 @@
           @media (max-width: 575px) {
             grid-template-columns: repeat(1, 1fr);
           }
+          .products-card {
+            img {
+              @media (max-width: 1199px) {
+                min-height: 250px;
+              }
+              @media (max-width: 992px) {
+                min-height: fit-content;
+              }
+            }
+          }
           .card-text {
             margin-bottom: 20px;
           }
         }
-      }
-    }
-    .products-block {
-      margin-top: 60px;
-      @media (max-width: 575px) {
-        margin-top: 45px;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 30px;
       }
     }
   }
